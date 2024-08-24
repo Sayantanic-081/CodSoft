@@ -66,7 +66,7 @@ class Compare extends Random_number1{
             Scanner sc=new Scanner(System.in);
             
             while(true){
-            System.out.println("Want to try again?");
+            System.out.println("Want to try again?(y/n)");
             char ch=sc.next().charAt(0);
             if(ch=='y'){
                
@@ -95,9 +95,9 @@ class Compare extends Random_number1{
         
 public class Number_Game2 {
     public static void main(String args[]){
-        
-        System.out.println("Guess the number game......");
-        System.out.println("Rule:\nYou will get 10 points for each correct answer.");
+        System.out.println("Welcome to Number Game");
+        System.out.println("Guess the number......");
+        System.out.println("Rule:\n1.You will get 10 points for each correct answer.\n2.You will get 3 attempts.");
         System.out.println("Start the game (y/n): ");
         Scanner sb=new Scanner(System.in);
         char c=sb.next().charAt(0);
