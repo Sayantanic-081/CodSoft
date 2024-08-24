@@ -27,9 +27,9 @@ class Random_number1{
 class Compare extends Random_number1{
     int count=0;
     int compare1(){
-         generate();
+        generate();
         for(int i=0;i<3;i++){
-        //generate();
+        
         input();
        
         Try_again t= new Try_again();
@@ -37,6 +37,7 @@ class Compare extends Random_number1{
             
             System.out.println("Yes,it's matching");
             count=count+10;
+            break;
            
            
             
@@ -69,10 +70,11 @@ class Compare extends Random_number1{
             char ch=sc.next().charAt(0);
             if(ch=='y'){
                
-                compare1();
+              
                  score=score+count;
                 System.out.println("You have scored : "+score);
                 score=0;
+                  compare1();
             }
             else if(ch=='n'){
                 score=score+count;
@@ -95,7 +97,7 @@ public class Number_Game2 {
     public static void main(String args[]){
         
         System.out.println("Guess the number game......");
-        System.out.println("Rule:\n1.You will get 10 points for each correct answer.\n2.You will get 3 attemps.");
+        System.out.println("Rule:\nYou will get 10 points for each correct answer.");
         System.out.println("Start the game (y/n): ");
         Scanner sb=new Scanner(System.in);
         char c=sb.next().charAt(0);
